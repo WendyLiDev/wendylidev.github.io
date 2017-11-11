@@ -1,0 +1,162 @@
+body{
+	background: url("gradient.png");
+	background-size: auto;
+	background-repeat: repeat-x;
+	z-index: -10;
+	height: 100vh;
+	font-family: 'Julius Sans One', sans-serif;
+	color: white;
+	overflow: hidden;
+}
+
+.navbar {
+	width: 100vw;
+}
+
+h1{
+	/*font-weight: 700;*/
+	font-size: 5em;
+	letter-spacing: 10px;
+}
+
+.header{
+	position: fixed;
+	top: 50%;
+	left: 33%;
+	z-index: 2;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+h3{
+	font-size: 3em;
+}
+
+html{
+	height:100%;
+}
+
+img{
+	zoom:600%;
+	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+    position: absolute;
+}
+
+.row{
+	margin-top: 20px;
+	padding-top: 0px;
+}
+
+#content {
+	text-align:center;
+	padding-top: 0;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+hr{
+	width:400px;
+}
+
+.wrapper {
+	overflow: hidden;
+	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+    height:500px;
+}
+
+.sliding-background {
+  
+  zoom: 600%;
+  height: 560px;
+  width: 5076px;
+  position: absolute;
+  
+}
+#foregroundMountain{
+	zoom:500%;
+	background: url("mountains.png") repeat-x;
+	background-position: 0px 37px;
+	animation: slide 150s linear infinite;
+	z-index: -3;
+}
+#backgoundMountain{
+	zoom:400%;
+	background: url("backmountains.png") repeat-x;
+	background-position: 0px 45px;
+	animation: slide 200s linear infinite;
+	z-index: -4;
+}
+#moon{
+	background: url("moon.png") no-repeat;
+	z-index:-5;
+	top:15px;
+	left: 10px;
+}
+#stars{
+	background: url("stars1.png") no-repeat;
+	z-index:-6;
+	left:-10px;
+	top:15px;
+	zoom:500%;
+}
+
+.starAnimate2 {
+	background: url("stars2.png") no-repeat !important;
+}
+
+.starAnimate3 {
+	background: url("stars3.png") no-repeat !important;
+}
+
+
+
+@keyframes slide{
+  0%{transform: translate3d(0, 0, 0);}
+  100%{transform: translate3d(-1692px, 0, 0);}
+}
+
+@keyframes MarqueeLeft{
+	0% { right: -100% }
+	100% { right: 100%}
+}
+
+.moving{
+	overflow: hidden;
+	position: relative;
+	animation: MarqueeLeft linear 15s infinite;
+	z-index: -2;
+}
+
+#cloud1{
+	padding-top: 10%;
+	animation: MarqueeLeft linear 18s infinite;
+}
+
+#cloud2{
+	padding-top: -15%;
+	animation: MarqueeLeft linear 14s infinite;
+}
+
+#cloud3{
+	animation: MarqueeLeft linear 15s infinite;
+}
+
+#bigcloud1{
+	animation: MarqueeLeft linear 25s infinite;
+}
+
+
