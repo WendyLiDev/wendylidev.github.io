@@ -2,7 +2,7 @@ body{
 	background: url("gradient.png");
 	background-size: auto;
 	background-repeat: repeat-x;
-	z-index: -10;
+	z-index: -15;
 	height: 100vh;
 	font-family: 'Julius Sans One', sans-serif;
 	color: white;
@@ -20,9 +20,8 @@ h1{
 }
 
 .header{
-	position: fixed;
-	top: 50%;
-	left: 33%;
+	position: center;
+
 	z-index: 2;
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
 				 0px 8px 13px rgba(0,0,0,0.1),
@@ -35,18 +34,6 @@ h3{
 
 html{
 	height:100%;
-}
-
-img{
-	zoom:600%;
-	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
-    image-rendering: -moz-crisp-edges;          /* Firefox                        */
-    image-rendering: -o-crisp-edges;            /* Opera                          */
-    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-    image-rendering: pixelated; /* Chrome */
-    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
-    position: absolute;
 }
 
 .row{
@@ -63,6 +50,7 @@ img{
 }
 
 hr{
+	position:center;
 	width:400px;
 }
 
@@ -75,7 +63,7 @@ hr{
     image-rendering: pixelated; /* Chrome */
     image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
     -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
-    height:500px;
+    /*height:300px;*/
 }
 
 .sliding-background {
@@ -86,40 +74,67 @@ hr{
   position: absolute;
   
 }
-#foregroundMountain{
+#grass{
 	zoom:500%;
-	background: url("mountains.png") repeat-x;
-	background-position: 0px 37px;
+	background: url("grass.png") repeat-x;
+	background-position: 0px 110px;
+	animation: slide 125s linear infinite;
+	z-index: -2;
+}
+#foregroundMountain{
+	zoom:400%;
+	background: url("backmountains.png") repeat-x;
+	background-position: 0px 100px;
 	animation: slide 150s linear infinite;
 	z-index: -3;
 }
 #backgoundMountain{
-	zoom:400%;
-	background: url("backmountains.png") repeat-x;
-	background-position: 0px 45px;
+	zoom:300%;
+	background: url("mountains.png") repeat-x;
+	background-position: 0px 122px;
 	animation: slide 200s linear infinite;
 	z-index: -4;
 }
+#fog{
+	zoom:300%;
+	background: url("fog.png") repeat-x;
+	background-position: 0px 40px;
+	z-index: -5;
+	opacity: 0.4;
+}
+#rocks{
+	zoom:300%;
+	background: url("rocks.png") repeat-x;
+	background-position: 0px 35px;
+	animation: slide 800s linear infinite;
+	z-index: -6;
+}
+.rocks2{
+	background: url("rocks2.png") repeat-x !important;
+}
+.rocks3{
+	background: url("rocks3.png") repeat-x !important;
+}
 #moon{
 	background: url("moon.png") no-repeat;
-	z-index:-5;
+	z-index:-7;
 	top:15px;
 	left: 10px;
 }
 #stars{
-	background: url("stars1.png") no-repeat;
-	z-index:-6;
+	background: url("stars1.png") repeat-x;
+	z-index:-7;
 	left:-10px;
-	top:15px;
-	zoom:500%;
+	top:50px;
+	zoom:300%;
 }
 
 .starAnimate2 {
-	background: url("stars2.png") no-repeat !important;
+	background: url("stars2.png") repeat-x !important;
 }
 
 .starAnimate3 {
-	background: url("stars3.png") no-repeat !important;
+	background: url("stars3.png") repeat-x !important;
 }
 
 
@@ -134,6 +149,24 @@ hr{
 	100% { right: 100%}
 }
 
+img{
+	/*zoom:200%;*/
+	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+    /*position: absolute;*/
+}
+
+#git{
+	width:50px;
+	height:auto;
+	position: center;
+}
+
 .moving{
 	overflow: hidden;
 	position: relative;
@@ -142,21 +175,42 @@ hr{
 }
 
 #cloud1{
-	padding-top: 10%;
+	padding-top: 20%;
 	animation: MarqueeLeft linear 18s infinite;
 }
 
 #cloud2{
-	padding-top: -15%;
+	padding-top: 19%;
+	zoom:150%;
+	z-index: -10;
 	animation: MarqueeLeft linear 14s infinite;
 }
 
 #cloud3{
+	padding-top: 18%;
+	zoom:150%;
+	z-index: -10;
 	animation: MarqueeLeft linear 15s infinite;
 }
 
 #bigcloud1{
+	padding-top:21%;
 	animation: MarqueeLeft linear 25s infinite;
 }
 
+/* The animation code */
+@keyframes cycle {
+    0%   {background-color: red;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
 
+/* The element to apply the animation to */
+#testcase {
+    width: 400px;
+    height: 100px;
+    background-color: red;
+    animation-name: cycle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}

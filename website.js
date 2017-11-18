@@ -9,4 +9,15 @@ setInterval(function() {
 	else {
 		$('#stars').addClass('starAnimate2');
 	}
+
+	// if($('#rocks').hasClass('rocks2')) {
+	// 	$('#rocks').removeClass('rocks2');
+	// 	$('#rocks').addClass('rocks3');
+	// }
+	// else if($('#rocks').hasClass('rocks3')) {
+	// 	$('#rocks').removeClass('rocks3');
+	// }
+	// else {
+	// 	$('#rocks').addClass('rocks2');
+	// }
 }, 800);
