@@ -16,6 +16,7 @@ body{
    font-family: 'Julius Sans One', sans-serif;
    color:#fff; 
 }
+
  .navbar-default .navbar-nav>li>a {
      font-size:20px; 
      color:#fff; 
@@ -23,15 +24,10 @@ body{
 .navbar-default .navbar-brand{
  	color:#fff;
  }
-
- #maincontainer{
- 	background: rgba(0, 0, 0, 0.2);
- }
-
 h1{
 	font-family: 'Julius Sans One', sans-serif;
 	letter-spacing: 10px;
-	padding-bottom: 70px;
+	/*padding-bottom: 70px;*/
 }
 
 h3{
@@ -39,9 +35,9 @@ h3{
 	letter-spacing: 10px;
 }
 
-h4{
-	font-family: 'Montserrat', sans-serif;
-}
+h4{font-family: 'Montserrat', sans-serif;}
+
+h5{font-family: 'Montserrat', sans-serif;}
 
 .fa{
 	font-size: 50px !important; 
@@ -52,21 +48,13 @@ h4{
 }
 #githubicon:hover{
 	color:#DEDEF6;
-
 }
 
-.thumbnail{
-	/*max-height: 300px;*/
-	margin: 50px;
-	background-color: rgba(0,0,0,0);
-}
+ #maincontainer{
+ 	background: rgba(0, 0, 0, 0.2);
+ }
 
-#videothumbnail{
-	width: 570px;
-	height:325px;
-}
-
-#toptext{
+ #toptext{
 	width: 65%;
 	margin: 0 auto;
 }
