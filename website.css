@@ -31,6 +31,7 @@ h1{
 
 .header{
 	position: center;
+	margin-top: -200px;
 
 	z-index: 2;
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
@@ -87,21 +88,21 @@ hr{
 #grass{
 	zoom:500%;
 	background: url("grass.png") repeat-x;
-	background-position: 0px 110px;
+	background-position: 0px 73px;
 	animation: slide 125s linear infinite;
 	z-index: -2;
 }
 #foregroundMountain{
 	zoom:400%;
 	background: url("backmountains.png") repeat-x;
-	background-position: 0px 100px;
+	background-position: 0px 75px;
 	animation: slide 150s linear infinite;
 	z-index: -3;
 }
 #backgoundMountain{
 	zoom:300%;
 	background: url("mountains.png") repeat-x;
-	background-position: 0px 122px;
+	background-position: 0px 90px;
 	animation: slide 200s linear infinite;
 	z-index: -4;
 }
@@ -115,7 +116,7 @@ hr{
 #rocks{
 	zoom:300%;
 	background: url("rocks.png") repeat-x;
-	background-position: 0px 35px;
+	background-position: 0px 1px;
 	animation: slide 800s linear infinite;
 	z-index: -6;
 }
@@ -127,14 +128,14 @@ hr{
 }
 #moon{
 	background: url("moon.png") no-repeat;
-	z-index:-7;
+	z-index:-13;
 	top:15px;
 	left: 10px;
 }
 #stars{
 	background: url("stars1.png") repeat-x;
 	z-index:-7;
-	left:-10px;
+	left:-14px;
 	top:50px;
 	zoom:300%;
 }
@@ -185,26 +186,30 @@ img{
 }
 
 #cloud1{
-	padding-top: 20%;
+	padding-top: 7%;
+	z-index: -5;
+	zoom:200%;
 	animation: MarqueeLeft linear 18s infinite;
 }
 
 #cloud2{
-	padding-top: 19%;
-	zoom:150%;
-	z-index: -10;
+	padding-top: 7%;
+	z-index: -5;
+	zoom:200%;
 	animation: MarqueeLeft linear 14s infinite;
 }
 
 #cloud3{
-	padding-top: 18%;
+	padding-top: 12%;
 	zoom:150%;
 	z-index: -10;
 	animation: MarqueeLeft linear 15s infinite;
 }
 
 #bigcloud1{
-	padding-top:21%;
+	padding-top:17%;
+	zoom:150%;
+	z-index: -10;
 	animation: MarqueeLeft linear 25s infinite;
 }
 
