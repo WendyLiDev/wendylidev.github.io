@@ -37,13 +37,14 @@
       	<!-- <li class = "active"><a href="">Home</a></li> -->
       	<!-- <li><a href="">About</a></li> -->
       	<!-- <li><a href="">Contact</a></li> -->
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li><a href="#">Sign Up <i class="fa fa-user-plus" aria-hidden="true"></i></a></li>
+        <li><a href="#">Login <i class="fa fa-user" aria-hidden="true"></i></a></li> -->
         <li><a href="Jukebox.html">Jukebox</a></li>
         <li><a href="Vanity.html">Vanity</a></li>
       </ul>
-      <!-- <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Sign Up <i class="fa fa-user-plus" aria-hidden="true"></i></a></li>
-        <li><a href="#">Login <i class="fa fa-user" aria-hidden="true"></i></a></li>
-      </ul> -->
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
@@ -53,7 +54,13 @@
 <!-- ========================== CONTENT ========================== -->
 <div class="container" id="maincontainer">
 	<center><h1>VANITY</h1></center>
-	<center><h5>(IN PROGRESS)</h5></center>
+
+	<center>
+		<div class="videoWrapper">
+    		<!-- Copy & Pasted from YouTube -->
+    		<iframe width="560" height="349" src="https://www.youtube.com/embed/2kJp44RgkWY" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</center>
 
 	<div id="toptext">
 		<h4>Adjust your vanity's lighting without your hands. Your mirror will display the current time and give you a welcome message. The lights will adjust its brightness using input from multiple photoresistors. The ATMEGA1284 has a analog to digital converter that I use to adjust the brightness of LEDS. The brightness is adjusted using pulse with modulation. </h4>
@@ -67,12 +74,11 @@
 			<li>8x photoresistors</li>
 			<li>5x Push Button</li>
 			<li>8x 330 Ohm Resistor</li>
-			<li>8x RGB LEDs</li>
+			<li>4x RGB LEDs</li>
 			<li>LCD Screen (white on black)</li>
 			<li>10k potentiometer</li>
 			<li>IR transmittor</li>
 			<li>IR reciever</li>
-
 			<li>Power adapter</li>
 		</ul>
 	</h4>
@@ -91,9 +97,27 @@
               <i class="fa fa-github-square" aria-hidden="true"></i>
     	</a>
     </h3>
-	<h4>
-		The source code that controls the entire system.
-	</h4>
+
+    <div class = "container">
+    	<div class = "row">
+			<div class = "col-lg-12 col-sm-12">
+				<div class = "thumbnail">
+					<img src = "overallSoftwareDesign.png">
+				</div>
+			</div>
+		</div>
+	    <div class = "row">
+			<div class = "col-lg-6 col-sm-6">
+				<div class = "thumbnail">
+					<img src = "pinout1.png">
+				</div>
+			</div>
+			<div class = "col-lg-6 col-sm-6">
+				<div class = "thumbnail">
+					<img src = "pinout2.png">
+			</div>
+		</div>
+	</div>
 	
 </div>
 

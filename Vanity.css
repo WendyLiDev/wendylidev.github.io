@@ -1,11 +1,13 @@
 body{
 	background: url("gradient.png");
-	background-size: cover;
-	background-repeat: repeat-x;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	z-index: -15;
 	height: 100vh;
 	color: white;
 	/*overflow: hidden;*/
+	background-color: black;
 }
 
 .navbar {
@@ -27,7 +29,6 @@ body{
 h1{
 	font-family: 'Julius Sans One', sans-serif;
 	letter-spacing: 10px;
-	/*padding-bottom: 70px;*/
 }
 
 h3{
@@ -35,7 +36,10 @@ h3{
 	letter-spacing: 10px;
 }
 
-h4{font-family: 'Montserrat', sans-serif;}
+h4{
+	padding: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
 
 h5{font-family: 'Montserrat', sans-serif;}
 
@@ -45,6 +49,7 @@ h5{font-family: 'Montserrat', sans-serif;}
 
 #githubicon{
 	color:white;
+	padding-bottom: 50px;
 }
 #githubicon:hover{
 	color:#DEDEF6;
@@ -58,3 +63,39 @@ h5{font-family: 'Montserrat', sans-serif;}
 	width: 65%;
 	margin: 0 auto;
 }
+
+.thumbnail{
+	/*max-height: 300px;*/
+	margin: 50px;
+	background-color: rgba(0,0,0,0);
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 14%;
+	left: 14%;
+	width: 70%;
+	height: 70%;
+	border: solid 3px white;
+}
+/*
+img{
+	width: 45%;
+	float: left;
+	margin: 1.66%;
+}
+*/
+
+.thumbnail{
+	min-height: 10px;
+}
+
+
+

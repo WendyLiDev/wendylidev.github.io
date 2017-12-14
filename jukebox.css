@@ -1,7 +1,8 @@
 body{
 	background: url("gradient.png");
-	background-size: cover;
-	background-repeat: repeat-x;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	z-index: -15;
 	height: 100vh;
 	color: white;
@@ -31,7 +32,6 @@ body{
 h1{
 	font-family: 'Julius Sans One', sans-serif;
 	letter-spacing: 10px;
-	padding-bottom: 70px;
 }
 
 h3{
@@ -61,12 +61,24 @@ h4{
 	background-color: rgba(0,0,0,0);
 }
 
-#videothumbnail{
-	width: 570px;
-	height:325px;
-}
-
 #toptext{
 	width: 65%;
 	margin: 0 auto;
 }
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 14%;
+	left: 14%;
+	width: 70%;
+	height: 70%;
+	border: solid 3px white;
+}
+
