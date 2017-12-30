@@ -1,13 +1,13 @@
 body{
-	background: url("gradient.png");
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background: rgb(176, 202,235);
+	/*background-size: 100% 100%;*/
+	/*background-repeat: no-repeat;*/
+	/*background-attachment: fixed;*/
 	z-index: -15;
 	height: 100vh;
 	color: white;
 	/*overflow: hidden;*/
-	background-color: black;
+	/*background-color: black;*/
 }
 
 .navbar {

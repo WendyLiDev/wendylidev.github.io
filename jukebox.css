@@ -1,25 +1,24 @@
 body{
-	background: url("gradient.png");
+	background: rgb(176, 202,235);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	z-index: -15;
 	height: 100vh;
 	color: white;
-	/*overflow: hidden;*/
 }
-
+/* =============== NAVBAR =============== */
 .navbar {
 	width: 100vw;
-   background-color: transparent;
-   background: transparent;
-   border-color: transparent;
-   font-family: 'Julius Sans One', sans-serif;
-   color:#fff; 
+   	background-color: transparent;
+  	background: transparent;
+  	border-color: transparent;
+  	font-family: 'Julius Sans One', sans-serif;
+  	color:#fff; 
 }
- .navbar-default .navbar-nav>li>a {
-     font-size:20px; 
-     color:#fff; 
+.navbar-default .navbar-nav>li>a {
+    font-size:20px; 
+    color:#fff; 
  }
 .navbar-default .navbar-brand{
  	color:#fff;
@@ -43,10 +42,16 @@ h4{
 	font-family: 'Montserrat', sans-serif;
 }
 
+#toptext{
+	width: 65%;
+	margin: 0 auto;
+}
+
+
+/*Github symbol*/
 .fa{
 	font-size: 50px !important; 
 }
-
 #githubicon{
 	color:white;
 }
@@ -55,17 +60,14 @@ h4{
 
 }
 
+/*images*/
 .thumbnail{
 	/*max-height: 300px;*/
 	margin: 50px;
 	background-color: rgba(0,0,0,0);
 }
 
-#toptext{
-	width: 65%;
-	margin: 0 auto;
-}
-
+/*youtube video*/
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
