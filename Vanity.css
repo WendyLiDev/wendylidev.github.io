@@ -6,42 +6,36 @@ body{
 	z-index: -15;
 	height: 100vh;
 	color: white;
-	/*overflow: hidden;*/
-	/*background-color: black;*/
+	font-family: 'Montserrat', sans-serif;
 }
 
 .navbar {
 	width: 100vw;
-   background-color: transparent;
-   background: transparent;
-   border-color: transparent;
-   font-family: 'Julius Sans One', sans-serif;
-   color:#fff; 
+	background-color: transparent;
+	background: transparent;
+	border-color: transparent;
+	color:#fff; 
 }
 
  .navbar-default .navbar-nav>li>a {
-     font-size:20px; 
-     color:#fff; 
+	font-size:20px; 
+	color:#fff; 
  }
 .navbar-default .navbar-brand{
  	color:#fff;
  }
 h1{
-	font-family: 'Julius Sans One', sans-serif;
 	letter-spacing: 10px;
 }
 
 h3{
-	font-family: 'Julius Sans One', sans-serif;
 	letter-spacing: 10px;
 }
 
 h4{
 	padding: 20px;
-	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 2px;
 }
-
-h5{font-family: 'Montserrat', sans-serif;}
 
 .fa{
 	font-size: 50px !important; 

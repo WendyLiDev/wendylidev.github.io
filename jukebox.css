@@ -6,21 +6,25 @@ body{
 	z-index: -15;
 	height: 100vh;
 	color: white;
+	font-family: 'Montserrat', sans-serif;
 }
 /* =============== NAVBAR =============== */
 .navbar {
+	font-family: 'Montserrat', sans-serif;
 	width: 100vw;
    	background-color: transparent;
   	background: transparent;
   	border-color: transparent;
-  	font-family: 'Julius Sans One', sans-serif;
   	color:#fff; 
 }
 .navbar-default .navbar-nav>li>a {
     font-size:20px; 
-    color:#fff; 
+	color:#fff; 
+	letter-spacing: 2px;
  }
 .navbar-default .navbar-brand{
+	font-size:30px; 
+	letter-spacing: 6px;
  	color:#fff;
  }
 
@@ -29,17 +33,16 @@ body{
  }
 
 h1{
-	font-family: 'Julius Sans One', sans-serif;
 	letter-spacing: 10px;
 }
 
 h3{
-	font-family: 'Julius Sans One', sans-serif;
 	letter-spacing: 10px;
 }
 
 h4{
 	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 2px;
 }
 
 #toptext{

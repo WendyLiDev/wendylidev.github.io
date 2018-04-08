@@ -96,6 +96,18 @@ hr {
     animation: zoomIn 5s;
 }
 
+#bottomtext{
+    width:100vw;
+    /* border: 3px solid #73AD21; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vw;
+    color:rgb(255,255,255);
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
 /* https://daneden.github.io/animate.css/ */
 
 @-webkit-keyframes slideInDown {
