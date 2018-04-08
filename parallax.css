@@ -1,0 +1,173 @@
+html{
+	height:100%;
+}
+
+body{
+    background: url("images/minimalist/background.png");
+    background-size: auto 100%;
+    z-index:-4;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* <!-- ========================== NAVBAR ========================== --> */
+.navbar {
+	width: 100vw;
+ 	background-color: transparent !important;
+   	border-color: rgba(255,255,255,0) !important;
+    border-width: thin;   
+    color:#fff; 
+    margin-bottom: 5px;
+    font-weight: 300 !important;
+    letter-spacing: 3px !important;
+}
+.navbar-default .navbar-nav>li>a {
+     font-size:20px; 
+     color:#fff !important; 
+     font-weight: 300 !important;
+     letter-spacing: 3px !important;
+}
+.navbar-default .navbar-brand{
+     color:#fff !important;
+     font-weight: 300 !important;
+     letter-spacing: 3px !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: rgb(255,255,255) !important;
+}
+/* <!-- ========================== SCENE ========================== --> */
+#scene{
+    z-index: -3;
+    width: 90vw;
+    height: 90vh;
+    position: absolute;
+    left: 5vw;
+    top: 10vh;
+    /* border: 3px solid #73AD21; */
+}
+
+.moving{
+    width: 90vw;
+    height: auto;
+}
+#star{
+    width: 90vw;
+    height: auto;
+    position: absolute;
+    left: 0vw;
+    top: 0vh;
+}
+#clouds{
+    width: 90vw;
+    height: auto; 
+    position: absolute;
+    left: 0vw;
+    top: 0vh;
+}
+/* <!-- ========================== CONTENT ========================== --> */
+#content{
+    z-index: 1;
+    margin-top: 30vh;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+#jumbo{
+    font-weight:300;
+    text-align: center;
+    font-size: 5.9vw;
+    letter-spacing: 15px;
+    color:rgb(255,255,255);
+    animation: slideInDown 5s;
+}
+hr {
+	width: 50vw;
+	border-top:1px solid #f8f8f8;
+    border-bottom:5px solid rgba(0, 0, 0, 0.2);
+}
+#subtitle{
+    font-weight:300;
+    text-align: center;
+    font-size: 2vw;
+    letter-spacing: 5px;
+    color:rgb(255,255,255);
+    animation: zoomIn 5s;
+}
+
+/* https://daneden.github.io/animate.css/ */
+
+@-webkit-keyframes slideInDown {
+    from {
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes slideInDown {
+    from {
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+      color: rgba(255, 255, 255, 0.2);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+  
+  .slideInDown {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+  }
+
+  @-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+        opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+      color: rgba(255, 255, 255, 0);
+    }
+    50% {
+        opacity: 0;
+        color: rgba(255, 255, 255, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      color: rgba(255, 255, 255, 1);
+    }
+    
+  }
+  
+  .zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+  }
+
+  

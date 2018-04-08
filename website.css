@@ -1,8 +1,8 @@
 body{
-	background: rgb(157, 177,179);
+	background: rgb(128, 167, 192);
 	z-index: -15;
 	height: 100vh;
-	font-family: 'Julius Sans One', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	color: white;
 	overflow: hidden;
 }
@@ -35,14 +35,14 @@ body{
 				 0px 18px 23px rgba(0,0,0,0.1);
 }
 h1{
-	font-size: 10vw;
+	font-size: 7vw;
 	letter-spacing: 10px;
 }
 hr{
 	position:center;
     border: 0;
     height: 2px;
-    width: 70vw;
+    width: 60vw;
     border-top:2px solid #f8f8f8;
     border-bottom:1px solid rgba(0, 0, 0, 0.2);
     /*background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));*/
@@ -86,34 +86,34 @@ html{
   background-size: auto 85% !important;
 }
 #one{
-	background: url("one.png") repeat-x;
+	background: url("images/backgroundImages/one.png") repeat-x;
 
 	animation: slide 150s linear infinite;
 	z-index: -2;
 }
 #two{
-	background: url("two.png") repeat-x;
+	background: url("images/backgroundImages/two.png") repeat-x;
 	animation: slide 300s linear infinite;
 	z-index: -3;
 }
 #three{
-	background: url("three.png") repeat-x;
+	background: url("images/backgroundImages/three.png") repeat-x;
 	animation: slide 350s linear infinite;
 	z-index: -4;
 }
 #four{
 	z-index: -5;
 	animation: slide 400s linear infinite;
-	background: url("four.png") repeat-x;
+	background: url("images/backgroundImages/four.png") repeat-x;
 }
 #five{
 	z-index: -5;
 	animation: slide 450s linear infinite;
-	background: url("five.png") repeat-x;
+	background: url("images/backgroundImages/five.png") repeat-x;
 }
 #six{
 	animation: slide 500s linear infinite;
-	background: url("six.png") repeat-x;
+	background: url("images/backgroundImages/six.png") repeat-x;
 	z-index: -5;
 }
 
