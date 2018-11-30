@@ -1,3 +1,3 @@
 # wendingoli.github.io
 My personal website
-wendy.li
+wendyli.net
