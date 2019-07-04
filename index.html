@@ -1,90 +1,642 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+  <head>
+    <!-- meta -->
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
     <title>Wendy Li</title>
-    <link rel="stylesheet" type="text/css" href="parallax.css">
-    <!-- include google font monteserrat -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
-    <!-- include bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- parallax script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117615085-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i"
+      rel="stylesheet"
+    />
 
-		gtag('config', 'UA-117615085-1');
-	</script>
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-</head>
-<body>
-    <!-- ========================== NAVBAR ========================== -->
-    <nav class="navbar navbar-default">
-            <div class="container">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                    <i class="far fa-moon"></i>
+    <!-- Libraries CSS Files -->
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet" />
+    <link href="lib/hover/hover.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Responsive css -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <!-- =======================================================
+    Theme Name: Folio
+    Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+  </head>
+
+  <body>
+    <!-- start section navbar -->
+    <nav id="main-nav">
+      <div class="row">
+        <div class="container">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="logo"/></a>
+          </div>
+
+          <div class="responsive">
+            <i data-icon="m" class="ion-navicon-round"></i>
+          </div>
+
+          <ul class="nav-menu list-unstyled">
+            <li><a href="#header" class="smoothScroll">Home</a></li>
+            <li><a href="#about" class="smoothScroll">About</a></li>
+            <li><a href="#resume" class="smoothScroll">Resume</a></li>
+            <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
+            <li><a href="#journal" class="smoothScroll">Blog</a></li>
+            <li><a href="#contact" class="smoothScroll">Contact</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End section navbar -->
+
+    <!-- start section header -->
+    <div id="header" class="home">
+      <div class="container">
+        <div class="header-content">
+          <!-- <img src="images/stars.png" id="stars"/> -->
+          <h1><span class="typed"></span></h1>
+          <p>developer & designer</p>
+
+          <ul class="list-unstyled list-social">
+            <li>
+              <a href="https://www.linkedin.com/in/wendingoli/"><i class="ion-social-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/wendingoli/?hl=en"><i class="ion-social-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://dribbble.com/Wendy-Li"><i class="ion-social-dribbble"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End section header -->
+
+    <!-- start section about us -->
+    <div id="about" class="paddsection">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-4 ">
+            <div class="div-img-bg">
+              <div class="about-img">
+                <img src="images/me.jpg" class="img-responsive" alt="me" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="about-descr">
+              <p class="p-heading">
+                About Me
+              </p>
+              <p class="separator">
+                My name is Wendy Li and I was born and raised in San Francisco,
+                California. I started my college career studying fine art and
+                decided that I wanted to do something more impactful with my
+                creative abilities and time in University. I decided to change
+                my major to Computer Science in my second year and through my
+                years, I have gotten involved with organizations and events
+                where I was able to use my knowledge of CS as well as my passion
+                for the arts. 
+              </p>
+              <p class="separator">
+                With my involvement, I really wanted to dedicate my time to helping 
+                increase diversity in the field of STEM. I was the director of <a href="https://rosehack.com/"">Rose Hack</a>,
+                 my university's first ever women-centric hackathon. It was hugely successful 
+                 with overwhelming support from over 40 corporate sponsors, students, and faculty.
+                 The event was partially hosted by UCR's up and coming new engineering organization,
+                 <a href="http://winc.cs.ucr.edu/">Women In Computing</a> of which I was the treasurer.
+                With my dedication and passion for helping minority groups in the field of stem, I was 
+                awarded with a scholarship to Grace Hopper Celebration 2018 as a <a href="https://ghc.anitab.org/2018-student-academic/scholarships/our-ghc-18-scholars-3/">Grace Hopper Scholar</a>.
+              </p>
+              <p>
+                TLDR: Art student turned engineer fighting for women in STEM
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end section about us -->
+
+    <!-- Resume Section  -->
+    <div id="resume">
+      <div class="container" >
+        <div style="text-align: center;">
+          <a href="pdf/Resume.pdf" class="btn btn-dark btn-lg active" target="_blank" role="button" aria-pressed="true">Resume</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Resume Section -->
+
+    <!-- start section services -->
+    <div id="services">
+      <div class="container">
+        <h2>Hobbies & Interests</h2>
+        <hr>
+        <div class="services-carousel owl-theme">
+          <div class="services-block">
+            <i class="icon ion-md-images"></i>
+            <span>GRAPHIC DESIGN</span>
+            <p class="separator">
+              I do freelance graphic design in both static and animated designs. 
+              I have worked with 2D and 3D graphics and have worked with a large 
+              variety of clients. You can find my rates <a href="pdf/Pricing_Guidline.pdf" target="_blank">here</a>
+              as well as my dribbble <a href="https://dribbble.com/Wendy-Li">here</a>.
+            </p>
+          </div>
+
+          <div class="services-block">
+            <i class="icon ion-md-heart"></i>
+            <span>CHARTREUX</span>
+            <p class="separator">
+              I have a 1 year old chartreux named <a href ="smokey.html">Smokey Reggiano</a> who is toilet trained. 
+              He enjoys spending his time begging for food and being held by his human. 
+              On special occasions, he wears a handsome bowtie.
+            </p>
+          </div>
+
+          <div class="services-block">
+            <i class="ion-ios-color-wand-outline"></i>
+            <span>WEB DESIGN</span>
+            <p class="separator">
+              UI/UX Design as well as front end development. Portfolio coming soon!
+            </p>
+          </div>
+
+          <div class="services-block">
+            <i class="icon ion-md-brush"></i>
+            <span>MAKEUP</span>
+            <p class="separator">
+              I love natural makeup looks but I also have an affinity for 
+              thick dramatic lashes and a bold winged eyeliner. I have been 
+              practicing since middle school and also did competetive special 
+              effects makeup for theater competitions.
+            </p>
+          </div>
+
+          <div class="services-block">
+            <i class="icon ion-md-shirt"></i>
+            <span>COSTUMES</span>
+            <p class="separator">
+              From Cinderella to Willy Wonka and the Chocolate Factory,
+              I helped create and dress actors for plays and musicals 
+              in highschool through college. I have surprising abilities 
+              when it comes to a hand stitch.     
+            </p>
+          </div>
+
+          <div class="services-block">
+            <i class="icon ion-md-cafe"></i>
+            <span>HACKATHONS</span>
+            <p class="separator">
+              Since highschool, I have been attending as well as helping 
+              plan hackathons. My first hackathon ever was <a href="https://www.codeday.org/">CodeDay</a> in San Francisco
+              and since then, I have attended or helped organize over 20 hackathons including <a href ="www.citrushack.com">Citrus Hack</a> and <a href="www.rosehack.com">Rose Hack</a>.
+            </p>
+          </div>
+
+          <div class="services-block">
+            <i class="icon ion-md-egg"></i>
+            <span>BAKING</span>
+            <p class="separator">
+              One of my favorite things to do at home is to bake. Some of my favorite things to bake are shortbred, 
+              chocolate chip cookies, and cupcakes. Every year for the holidays, I bake my family a couple dozen macarons in multiple flavors (usually matcha and coffee are my favorite). Check out my <a href="blog-single.html">blog</a> post on what I'm up to now!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end section services -->
+
+    <!-- start section portfolio -->
+    <div id="portfolio" class="text-center paddsection">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>My Portfolio</h2>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="portfolio-list">
+              <ul class="nav list-unstyled" id="portfolio-flters">
+                <li class="filter filter-active" data-filter=".featured">featured</li>
+                <li class="filter" data-filter=".stickers">stickers</li>
+                <li class="filter" data-filter=".citrushack">citrus hack</li>
+                <li class="filter" data-filter=".rosehack">rose hack</li>
+                <li class="filter" data-filter=".all">all</li>
+                <!-- <li class="filter" data-filter=".webdesign">web design</li> -->
+                <!-- <li class="filter" data-filter=".photography">photography</li> -->
+              </ul>
+            </div>
+
+            <div class="portfolio-container">
+              <div
+                class="col-lg-4 col-md-6 portfolio-thumbnail all stickers"
+              >
+                <a class="popup-img" href="images/portfolio/stickers/acm_stickers-01.png">
+                  <img src="images/portfolio/stickers/acm_stickers-01.png" alt="img" />
                 </a>
               </div>
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                  <!-- <li><a href="index.html">ABOUT ME</a></li> -->
-                  <li><a href="Jukebox.html">JUKEBOX</a></li>
-                  <li><a href="Vanity.html">VANITY</a></li>
-                  <li><a href="https://wendyli.carbonmade.com/">PORTFOLIO</a></li>
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-thumbnail all stickers"
+              >
+                <a class="popup-img" href="images/portfolio/stickers/acm_stickers-02.png">
+                  <img src="images/portfolio/stickers/acm_stickers-02.png" alt="img" />
+                </a>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-thumbnail all stickers"
+              >
+                <a class="popup-img" href="images/portfolio/stickers/acm_stickers-03.png">
+                  <img src="images/portfolio/stickers/acm_stickers-03.png" alt="img" />
+                </a>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-thumbnail all stickers"
+              >
+                <a class="popup-img" href="images/portfolio/stickers/acm_stickers-04.png">
+                  <img src="images/portfolio/stickers/acm_stickers-04.png" alt="img" />
+                </a>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-thumbnail all stickers"
+              >
+                <a class="popup-img" href="images/portfolio/stickers/acm_stickers-06.png">
+                  <img src="images/portfolio/stickers/acm_stickers-06.png" alt="img" />
+                </a>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-thumbnail all stickers"
+              >
+                <a class="popup-img" href="images/portfolio/stickers/acm_stickers-07.png">
+                  <img src="images/portfolio/stickers/acm_stickers-07.png" alt="img" />
+                </a>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-thumbnail all stickers"
+              >
+                <a class="popup-img" href="images/portfolio/stickers/acm_stickers-08.png">
+                  <img src="images/portfolio/stickers/acm_stickers-08.png" alt="img" />
+                </a>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-thumbnail all stickers"
+              >
+                <a class="popup-img" href="images/portfolio/stickers/acmwsitcker.png">
+                  <img src="images/portfolio/stickers/acmwsitcker.png" alt="img" />
+                </a>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-thumbnail all stickers citrushack"
+              >
+                <a class="popup-img" href="images/portfolio/stickers/citrus_hack_2018_night.png">
+                  <img src="images/portfolio/stickers/citrus_hack_2018_night.png" alt="img" />
+                </a>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-thumbnail all stickers citrushack"
+              >
+                <a class="popup-img" href="images/portfolio/stickers/citrus_hack_2018_day.png">
+                  <img src="images/portfolio/stickers/citrus_hack_2018_day.png" alt="img" />
+                </a>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-thumbnail all stickers rosehack"
+              >
+                <a class="popup-img" href="images/portfolio/stickers/rosehacklogoSticker.png">
+                  <img src="images/portfolio/stickers/rosehacklogoSticker.png" alt="img" />
+                </a>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-thumbnail all stickers rosehack"
+              >
+                <a class="popup-img" href="images/portfolio/stickers/rosehack_badge.png">
+                  <img src="images/portfolio/stickers/rosehack_badge.png" alt="img" />
+                </a>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-thumbnail all citrushack"
+              >
+                <a class="popup-img" href="images/portfolio/graphics/tshirtdesignneg.png">
+                  <img src="images/portfolio/graphics/tshirtdesignneg.png" alt="img" />
+                </a>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-thumbnail all citrushack"
+              >
+                <a class="popup-img" href="images/portfolio/graphics/daypost.png">
+                  <img src="images/portfolio/graphics/daypost.png" alt="img" />
+                </a>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-thumbnail all citrushack"
+              >
+                <a class="popup-img" href="images/portfolio/graphics/nightpost.png">
+                  <img src="images/portfolio/graphics/nightpost.png" alt="img" />
+                </a>
+              </div>
+
+              <!-- <div
+              class="col-lg-4 col-md-6 portfolio-thumbnail all citrushack"
+            >
+              <a class="popup-img" href="images/portfolio/graphics/poster.png">
+                <img src="images/portfolio/graphics/poster.png" alt="img" />
+              </a>
+            </div> -->
+
+            <div
+            class="col-lg-4 col-md-6 portfolio-thumbnail all citrushack"
+            >
+              <a class="popup-img" href="images/portfolio/graphics/nighttimecoverphoto.png">
+                <img src="images/portfolio/graphics/nighttimecoverphoto.png" alt="img" />
+              </a>
+            </div>
+
+            <div
+            class="col-lg-4 col-md-6 portfolio-thumbnail all featured rosehack"
+            >
+              <a class="popup-img" href="images/portfolio/graphics/liveanimation.gif">
+                <img src="images/portfolio/graphics/liveanimation.gif" alt="img" />
+              </a>
+            </div>
+
+            <div
+            class="col-lg-4 col-md-6 portfolio-thumbnail all featured rosehack"
+            >
+              <a class="popup-img" href="images/portfolio/graphics/rosehackStatic.gif">
+                <img src="images/portfolio/graphics/rosehackStatic.gif" alt="img" />
+              </a>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End section portfolio -->
+
+    <!-- start section journal -->
+    <div id="journal" class="text-left paddsection">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>journal</h2>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="journal-block">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+                <a href="blog-single.html"
+                  ><img
+                    src="images/keto-cheesecake-post.jpg"
+                    class="img-responsive"
+                    alt="img"
+                /></a>
+
+                <div class="journal-txt">
+                  <h4>
+                    <a href="blog-single.html"
+                      >Keto Cheesecake Fat Bomb</a
+                    >
+                  </h4>
+                  <p class="separator">
+                      A no bake low carb recipe for cheesecake and a look into my first experience with keto.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+                <a href="blog-single.html"
+                  ><img
+                    src="images/blog-post-2.jpg"
+                    class="img-responsive"
+                    alt="img"
+                /></a>
+
+                <div class="journal-txt">
+                  <h4>
+                    <a href="#blog-single.html">Citrus Hack</a>
+                  </h4>
+                  <p class="separator">
+                    UCR's premier hackathon for over half a decade.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+                <a href="blog-single.html"
+                  ><img
+                    src="images/blog-post-3.jpg"
+                    class="img-responsive"
+                    alt="img"
+                /></a>
+
+                <div class="journal-txt">
+                  <h4>
+                    <a href="blog-single.html"
+                      >Design Principles</a
+                    >
+                  </h4>
+                  <p class="separator">
+                    What are my favorite design principles that I love to embody in all my work
+                  </p>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End section journal -->
+
+    <!-- start section contact -->
+    <div id="contact" class="paddsection">
+      <div class="container">
+        <div class="contact-block1">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="contact-contact">
+                <h2 class="mb-30">GET IN TOUCH</h2>
+
+                <ul class="contact-details">
+                  <li><span>wendingoli@gmail.com</span></li>
                 </ul>
-              </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-    </nav>
+              </div>
+            </div>
 
-    <!-- ========================== SCENE ========================== -->
-    <div id="scene">
-        <div data-depth="0.2" class = "moving">
-            <img src="images/minimalist/stars.png" alt="" id="star">
+            <!-- <div class="col-lg-6">
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="row">
+                  <div id="sendmessage">
+                    Your message has been sent. Thank you!
+                  </div>
+                  <div id="errormessage"></div>
+
+                  <div class="col-lg-6">
+                    <div class="form-group contact-block1">
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        id="name"
+                        placeholder="Your Name"
+                        data-rule="minlen:4"
+                        data-msg="Please enter at least 4 chars"
+                      />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        id="email"
+                        placeholder="Your Email"
+                        data-rule="email"
+                        data-msg="Please enter a valid email"
+                      />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="subject"
+                        id="subject"
+                        placeholder="Subject"
+                        data-rule="minlen:4"
+                        data-msg="Please enter at least 8 chars of subject"
+                      />
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <textarea
+                        class="form-control"
+                        name="message"
+                        rows="12"
+                        data-rule="required"
+                        data-msg="Please write something for us"
+                        placeholder="Message"
+                      ></textarea>
+                      <div class="validation"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <input
+                      type="submit"
+                      class="btn btn-defeault btn-send"
+                      value="Send message"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div> -->
+          </div>
         </div>
-        <div data-depth="0.6" class = "moving">
-            <img src="images/minimalist/clouds.png" alt="" id="clouds">    
+      </div>
+    </div>
+    <!-- start section contact -->
+
+    <!-- start section footer -->
+    <div id="footer" class="text-center">
+      <div class="container">
+        <div class="socials-media text-center">
+          <ul class="list-unstyled">
+            <li>
+                <a href="https://www.linkedin.com/in/wendingoli/"><i class="ion-social-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/wendingoli/?hl=en"><i class="ion-social-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://dribbble.com/Wendy-Li"><i class="ion-social-dribbble"></i></a>
+            </li>
+          </ul>
         </div>
-    </div>
 
-    <!-- ========================== CONTENT ========================== -->
-    <div id="content">
-        <h1 id="jumbo">WENDY LI</h1>
-        <hr>
-        <h5 id="subtitle">
-            UNIVERSITY OF CALIFORNIA, RIVERSIDE
-            <br /><br />
-            COMPUTER SCIENCE
-        </h5>
-        <h6 id="bottomtext">SIMPLICITY IS THE ULTIMATE SOPHISTICATION.</h6> 
-    </div>
-    
-    
+        <p>&copy; Copyrights Folio. All rights reserved.</p>
 
-    <!-- ========================== SCRIPTS ========================== -->
-    <script src="script.js"></script>
-    <!-- include jquery -->
-    <script
-    src="https://code.jquery.com/jquery-3.2.1.js"
-    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-    crossorigin="anonymous"> 
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
-    </script>
-    <!-- font awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-</body>
+        <div class="credits">
+          <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
+        -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+    <!-- End section footer -->
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
