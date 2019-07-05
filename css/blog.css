@@ -144,3 +144,7 @@ blockquote {
   border: none;
   border-left: 4px solid #9e7eb8;
 }
+
+.img-blog {
+  max-width: 100%;
+}
