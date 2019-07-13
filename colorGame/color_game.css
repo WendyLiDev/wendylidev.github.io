@@ -1,0 +1,83 @@
+body{
+	background-color: #232323;
+	font-family: "Montserrat", "Avenir";
+	margin: 0;
+}
+
+h1, h2, h4{
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+h1{
+	line-height: 1.1;
+	padding: 20px 0;
+	margin: 0;
+}
+
+.square{
+	width: 30%;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.6%;
+	border-radius: 25px;
+	transition: background 0.6s;
+	-webkit-transition: background 0.6s;
+	-moz-transition: background 0.6s;
+	transition: opacity 0.6s;
+	-webkit-transition: background 0.6s;
+	-moz-transition: background 0.6s;
+}
+	
+#container{
+	max-width: 600px;
+	margin: 20px auto;
+}
+
+#header{
+	background-color: blue;
+}
+
+#stripe{
+	background-color: white;
+	height: 30px;
+	text-align: center;
+}
+
+.selected{
+	background: rgb(73, 132, 227);
+	color: white;
+}
+
+#color-to-guess{
+	font-size:200%;
+}
+
+button{
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color: rgb(73, 132, 227);
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	outline: none;
+}
+
+button:hover{
+	color:white;
+	background: rgb(73, 132, 227);
+}
+
+#game-status{
+	display: inline-block;
+	width: 20%;
+}
+
+
