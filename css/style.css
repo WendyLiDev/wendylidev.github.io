@@ -115,11 +115,13 @@ p {
   line-height: 50px;
   padding: 0 30px;
   text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn:hover,
 .btn:focus {
   color: #fff;
+  transform: scale(1.1);
 }
 
 .padDiv {
@@ -344,6 +346,7 @@ nav ul li a {
   background: #f7f7f7;
   position: relative;
   padding-bottom: 80px;
+  padding-top: 80px;
 }
 
 .owl-item {
@@ -527,6 +530,10 @@ nav ul li a {
   margin: 0;
   font-size: 14px;
   line-height: 24px;
+}
+
+.project-img {
+  padding: 20px;
 }
 
 /*-----------------------------------------------------------------------------------*/
