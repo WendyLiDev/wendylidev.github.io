@@ -9,7 +9,7 @@
 /*-----------------------------------------------------------------------------------*/
 
 body {
-  background: #f fffff;
+  background: #ffffff;
   color: #898989;
   font-family: "Poppins", helvetica;
   font-size: 15px;
@@ -474,7 +474,6 @@ nav ul li a {
 #journal-blog {
   height: auto;
   width: 100%;
-  background: #f7f7f7;
   padding-bottom: 60px;
   position: relative;
 }
